@@ -8,7 +8,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RestController
 public class UserController {
     @GetMapping("/user-prof")
-    public String getMethodName() {
+    public String getLuizName() {
         return "Olá mundo, sou o Prof. Luiz";
     }    
+    @GetMapping("/user-gaby")
+    public String getMethodName() {
+        return ("Olá mundo, eu sou a Gaby! ");
+    }
+    
 }
